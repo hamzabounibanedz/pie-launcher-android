@@ -266,7 +266,11 @@ public class AppPieView extends View {
 		paintText.setColor(res.getColor(R.color.text_color));
 		alphaText = paintText.getAlpha();
 		paintText.setTextAlign(Paint.Align.CENTER);
-		paintText.setTextSize(14f * sp);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            paintText.setTypeface(res.getFont(R.font.brand_display));
+            paintAppShortcutText.setTypeface(paintText.getTypeface());
+        }
+        paintText.setTextSize(17f * sp);
 		textHeight = paintText.descent() - paintText.ascent();
 		textOffset = (textHeight / 2) - paintText.descent();
 		translucentBackgroundColor = res.getColor(R.color.bg_ui);
@@ -279,7 +283,7 @@ public class AppPieView extends View {
 		alphaAppShortcutsThumb = paintAppShortcutsThumb.getAlpha();
 		appShortcutsScroller = new OverScroller(context);
 		paintAppShortcutText.setColor(res.getColor(R.color.text_color));
-		paintAppShortcutText.setTextSize(14f * sp);
+		paintAppShortcutText.setTextSize(17f * sp);
 
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 			pieRenderNode = new RenderNode("PieMenu");
