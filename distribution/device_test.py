@@ -59,8 +59,8 @@ def launch():
     time.sleep(2)
     assert shell('pidof',PACKAGE), 'No application process'
     
-def activity(name):
-    deadline=time.monotonic()+25
+def activity(name, timeout=25):
+    deadline=time.monotonic()+timeout
     while time.monotonic()<deadline:
         focus=shell('dumpsys','activity','activities')
         if any(name in line and ('mResumed' in line or 'topResumed' in line) for line in focus.splitlines()): return
@@ -69,7 +69,13 @@ def activity(name):
 
 def exercise():
     tap('skip')
-    activity('HomeActivity')
+    try:
+        activity('HomeActivity', timeout=8)
+    except AssertionError:
+        # A system launcher dialog can take focus between locating Skip and tapping it.
+        # Retry only when onboarding is still visible on the device.
+        tap('skip')
+        activity('HomeActivity')
     shell('input','tap','360','620')
     tap('search')
     shell('input','text','Settings')
