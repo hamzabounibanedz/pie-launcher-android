@@ -9,10 +9,11 @@ android {
 	}
 
 	defaultConfig {
+		applicationId = "io.github.hamzabounibanedz.pielauncher"
 		minSdk 9
 		targetSdk sdk_version
 
-		versionCode 76
+		versionCode = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInteger()
 		versionName '1.29.0'
 	}
 
