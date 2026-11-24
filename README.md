@@ -1,9 +1,11 @@
 <!-- independent-distribution -->
-# PieLauncher for Android
+# Arcwheel for Android
 
-Gesture launcher and searchable app drawer. This independently signed edition builds the [original 1.29.0 release](https://github.com/markusfisch/PieLauncher/tree/b22138c821e67363ddb9bec1d818cbfc3e9fd696) from source. The upstream name, license and application features are preserved.
+Gesture launcher and searchable app drawer. This independently signed edition builds the [original 1.29.0 release](https://github.com/markusfisch/PieLauncher/tree/b22138c821e67363ddb9bec1d818cbfc3e9fd696) from source. This edition adds a new native identity and a browser companion. Upstream attribution and licensing are included.
 
 [Download APK and AAB](https://github.com/hamzabounibanedz/pie-launcher-android/releases/latest) · [Cloud build and emulator results](https://github.com/hamzabounibanedz/pie-launcher-android/actions/workflows/distribution.yml)
+
+[Web companion](https://arcwheel-launcher.vercel.app) · [Install on Android](https://arcwheel-launcher.vercel.app/install)
 
 ![Scan for the Android installation page](distribution/install-qr.png)
 

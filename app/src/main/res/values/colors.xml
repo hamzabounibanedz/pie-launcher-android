@@ -1,14 +1,14 @@
 <resources>
-	<color name="ic_launcher_background">#134dca</color>
-	<color name="bg_ui">#a000</color>
-	<color name="bg_search_bar">#c000</color>
-	<color name="bg_app_shortcuts">#c000</color>
-	<color name="bg_button">#fff</color>
-	<color name="bg_button_pressed">#afff</color>
-	<color name="bg_action_pressed">#2fff</color>
-	<color name="bg_drop_zone">#8000</color>
-	<color name="button_text">#a000</color>
-	<color name="text_color">#fff</color>
-	<color name="text_color_preference">#afff</color>
-	<color name="separator">#1fff</color>
+	<color name="ic_launcher_background">#162b4e</color>
+	<color name="bg_ui">#ef142442</color>
+	<color name="bg_search_bar">#e91b3253</color>
+	<color name="bg_app_shortcuts">#ee193149</color>
+	<color name="bg_button">#9bdeff</color>
+	<color name="bg_button_pressed">#ddedff</color>
+	<color name="bg_action_pressed">#665aade1</color>
+	<color name="bg_drop_zone">#a6162b4e</color>
+	<color name="button_text">#102841</color>
+	<color name="text_color">#f5faff</color>
+	<color name="text_color_preference">#d2e3f2</color>
+	<color name="separator">#444a6685</color>
 </resources>

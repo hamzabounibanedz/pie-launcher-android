@@ -10,6 +10,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="vertical">
+            <include layout="@layout/brand_header"/>
 			<de.markusfisch.android.pielauncher.widget.PreferenceView
 				android:id="@+id/welcome"
 				android:drawablePadding="8dp"

@@ -1,0 +1,5 @@
+<resources>
+  <color name="brand_base">#162b4e</color>
+  <color name="brand_accent">#8ce0ff</color>
+  <string name="brand_wordmark" translatable="false">Arcwheel</string>
+</resources>

@@ -1,5 +1,5 @@
 <resources>
-	<string name="app_name">Pie Launcher</string>
+	<string name="app_name">Arcwheel</string>
 	<string name="tip_loading">Chargement…</string>
 	<string name="editor_unavailable_while_loading">Veuillez attendre la fin du chargement des applications</string>
 	<string name="tip_drag_to_order">Entourer pour changer l\'ordre</string>
